@@ -1,0 +1,26 @@
+#parte_de_cima {
+    background: rgb(255, 255, 188);
+    display: flex; 
+    /*comando para as divs ficarem uma ao lado da outra*/
+    height: 400px;
+    /* altura */
+    width: 1000px;
+    /* largura */
+    align-items: center;
+    /* vertical */
+    justify-content: space-between;
+    /* horizontal */
+    /* gap é usado para o espaçamento entre as divs */
+}
+
+#parte_de_baixo {
+    margin-top: 50px;
+    background: rgb(255, 191, 191);
+    width: 1000px;
+}
+
+#parte_de_cima div {
+    width: 100px;
+    background: yellowgreen;
+    padding: 20px;
+}

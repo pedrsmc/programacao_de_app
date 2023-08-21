@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+    background: linear-gradient(#007efd, #d2e2f3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+hr {
+    width: 35%;
+    height: 10px;
+    background: white;
+}
+
+#logo {
+    display: block;
+    margin: 10px auto;
+    width: 700px;
+}
+
+#seta {
+    display: block;
+    margin: auto;
+}
