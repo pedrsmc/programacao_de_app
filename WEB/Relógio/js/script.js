@@ -17,19 +17,19 @@ function tempo() {
     let min = newDate.getMinutes()
     let seg = newDate.getSeconds()
 
-    horas.innerHTML = hr
-    minutos.innerHTML = min
-    segundos.innerHTML = seg
-
     if(seg < 10) {
-        segundos.innerHTML = '0' + seg
+        seg = '0' + seg
     }
 
     if(min < 10) {
-        segundos.innerHTML = '0' + seg
+        min = '0' + min
     }
 
     if(hr < 10) {
-        segundos.innerHTML = '0' + seg
+        hr = '0' + hr
     }
+
+    horas.innerHTML = hr
+    minutos.innerHTML = min
+    segundos.innerHTML = seg
 }
