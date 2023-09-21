@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/images/fundo.jpg');
+    background-size: cover;
+}
+
+.omega p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.alpha {
+    display: flex;
+    align-items: center;
+}
+
+.relogio {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px rgb(24, 24, 24);
+    padding: 20px;
+}
+
+
+.relogio p {
+    font-size: 160px;
+    font-weight: bold;
+}
+
+.alpha p {
+    font-size: 50px;
+    font-weight: bold;
+}
