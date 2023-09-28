@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(0, 80, 0);
+    padding: 20px;
+    width: 400px;
+}
+
+.interface p {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: green;
+}
+
+.interface input {
+    text-align: center;
+    background: rgb(204, 204, 204);
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+
+.interface button {
+    background: rgb(1, 119, 50);
+    border: none;
+    height: 40px;
+    width: 170px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#calcular {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: white;
+}
