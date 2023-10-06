@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(rgb(52, 52, 255), rgb(0, 0, 53));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#imagem {
+    width: 300px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.central {
+    width: 600px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.central .fotos {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.central .areaButton {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background: rgb(63, 63, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.areaButton .buttons1, .buttons2 {
+    display: flex;
+    gap: 30px;
+}
