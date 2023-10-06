@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 225, 255), blue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 350px;
+    height: 410px;
+}
+
+.divPrincipal {
+    background: white;
+    width: 720px;
+    height: 500;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.562);
+}
+
+.divImagem {
+    gap: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.divImagem p {
+    text-align: justify;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes button {
+    background: black;
+    height: 60px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
