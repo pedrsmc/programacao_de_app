@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    background: url('/images/fundo.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: PTSans;
+    src: url('/fonts/PTSansCaption-Regular.ttf');
+}
+
+.caixa01 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.caixa01 p {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: white;
+    opacity: 50%;
+}
+
+.horario {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+}
+
+.horario p {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 200px;
+    color: white;
+    opacity: 50%;
+}
+
+.data {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.data p {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    opacity: 50%;
+}
