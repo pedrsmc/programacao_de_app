@@ -34,17 +34,17 @@ async function searchCity() {
     } else {
         noneOpacity()
         let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric&lang=pt_br`)
-            .then(awnser => awnser.json())
-
+        .then(awnser => awnser.json())
+        
         if (data.cod == "404") {
             alert("Cidade não encontrada!")
             fullOpacity()
         } else {
+            fullOpacity()
+            extendMainBox()
             town.textContent = data.name
             celsius.textContent = Math.ceil(data.main.temp) + " °C"
             desc.textContent = data.weather[0].description
-            extendMainBox()
-            fullOpacity()
         }
 
         console.log(data)
