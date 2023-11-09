@@ -1,23 +1,31 @@
 const key = 'e355cb35c84a8d8d1ebea310e3e0aca9'
-const pesquisa = document.querySelector('.input-cidade')
-const botao = document.querySelector('.botao-busca')
-const cidade = document.querySelector('.cidade')
-const temperatura = document.querySelector('.temp')
-const previsao = document.querySelector('.texto-previsao')
+const town = document.querySelector('#town')
+const celsius = document.querySelector('#celsius')
+const desc = document.querySelector('#desc')
+const input = document.querySelector('#input')
+const button = document.querySelector('#button')
+const bottomBox = document.querySelector('.bottom-box')
 
-botao.addEventListener('click', buscarCidade)
+button.addEventListener('click', searchCity)
 
-// async determina que a função aguarde uma resposta da API
-async function buscarCidade() {
-    let nomeCidade = pesquisa.value
-    
-    // await determina que o fetch aguarde uma resposta da API
-    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nomeCidade}&appid=${key}&units=metric&lang=pt_br`)
-    .then(resposta => resposta.json())
+function showBottomBox() {
+    bottomBox.style.display = "flex";
+}
 
-    cidade.textContent = "Tempo em " + dados.name
-    temperatura.textContent = Math.ceil(dados.main.temp) + " °C"
-    previsao.textContent = dados.weather[0].description
+async function searchCity() {
+    let cityName = input.value
 
-    console.log(dados)
+    if (cityName == "") {
+        alert("Digite o nome de uma cidade!")
+    } else {
+        let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric&lang=pt_br`)
+            .then(awnser => awnser.json())
+
+        town.textContent = data.name
+        celsius.textContent = Math.ceil(data.main.temp) + " °C"
+        desc.textContent = data.weather[0].description
+
+        showBottomBox()
+        console.log(data)
+    }
 }

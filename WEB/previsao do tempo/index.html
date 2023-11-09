@@ -3,28 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="caixa-maior">
-        <input type="text" class="input-cidade">
-        
-        <button class="botao-busca">
-            <img src="images/find.svg" class="img-busca">
-        </button>
-        
-        <div class="caixa-media">
-            <h2 class="cidade"></h2>
-            <p class="temp"></p>
-            
-            <div class="caixa-menor">
-                <p class="texto-previsao"></p>
-            </div>
+    <div class="main-box">
+        <div class="top-box">
+            <input type="text" id="input" placeholder="Nome da cidade">
+
+            <button id="button">
+                <img src="images/find.svg">
+            </button>
+        </div>
+
+        <div class="bottom-box">
+            <p id="town"></p>
+            <p id="celsius"></p>
+            <p id="desc"></p>
         </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 
